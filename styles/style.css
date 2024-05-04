@@ -1,0 +1,102 @@
+body{
+    font-family: Lexend;
+    background-color: #cfddff;
+
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "head head head"
+        "nav main main"
+        "nav main main"
+        "foot foot foot";
+}
+
+.lightmode{
+    color: #1b005c;
+    
+}
+
+.lightmode h1{
+    color: #4e005f;
+}
+
+header{
+    grid-area: head;
+    text-align: center;
+}
+
+nav{
+    grid-area: nav;
+    padding: 1em;
+    
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #270081;
+}
+
+nav a:hover{
+    color: #785bbd;
+}
+
+nav a:visited{
+    color: #600574;
+}
+
+main{
+    grid-area: main;
+}
+
+.boxlight{
+
+    margin:1em;
+    padding: 1em;
+    border: solid 0.2em;
+    border-radius: 1em;
+    border-color: #600574;
+    max-width: 45em;
+    background-image: linear-gradient(35deg, #f293ff, #96e0ff);
+}
+
+footer{
+    grid-area: foot;
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.thumbnails{
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail{
+    max-width: 15%;
+    max-height: 15%;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.mainimg{
+    position: fixed;
+    margin-left: 32em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+}
+
+.display{
+    max-width: 65%;
+    max-height: 65%;
+}
